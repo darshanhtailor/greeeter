@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#videoArea{
+    width: 75%;
+}
+#stream{
+    background-color: rgb(50, 50, 50);
+    height: 90vh;
+}
+#videoOptions{
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chatArea{
+    background-color: blue;
+    height: 100vh;
+    width: 25%;
+}
+#container{
+    display: flex;
+}
+.icons{
+    color: white;
+    background-color: rgb(50, 50, 50);
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+#videoButton, #audioButton{
+    background-color: red;
+}
+#chatArea input{
+    width: 80%;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 7px;
+    border: none;
+    background-color: whitesmoke;
+}

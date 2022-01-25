@@ -2,12 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <title>Greeeter</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    Darshan
-    <div id="availableCameras">
-        
+    <div id="container">
+        <div id="videoArea">
+            <div id="stream">
+
+            </div>
+            <div id="videoOptions">
+                <span class="icons" id="videoButton"><i class="fa-solid fa-video-slash"></i></span>
+                <span class="icons" id="audioButton"><i class="fa-solid fa-microphone-slash"></i></span>
+                <span class="icons"><i class="fa-solid fa-desktop"></i></span>
+                <span class="icons"><i class="fa-solid fa-plus"></i></span>
+                <span class="icons" style="background-color: red;"><i class="fa-solid fa-phone-slash"></i></span>
+            </div>
+        </div>
+        <div id="chatArea">
+            <div id="typeMessage">
+                <input type="text" name="" id="" placeholder="Type your message...">
+                <span><i class="fa-solid fa-share"></i></span>                
+            </div>
+        </div>
     </div>
 </body>
 <script src="/js/getDevice.js"></script>

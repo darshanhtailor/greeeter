@@ -16,10 +16,6 @@ app.get('/', (req, res)=>{
     res.render('index')
 })
 
-app.get('/getdevice', (req, res)=>{
-
-})
-
 app.listen(port, ()=>{
     console.log('Server started')
 })
