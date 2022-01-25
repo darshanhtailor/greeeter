@@ -4,30 +4,31 @@
     font-family: sans-serif;
 }
 #videoArea{
-    width: 75%;
+    width: 80%;
 }
 #stream{
     background-color: rgb(50, 50, 50);
     height: 90vh;
 }
 #videoOptions{
-    background-color: black;
+    background-color: rgb(50, 50, 50);
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #chatArea{
-    background-color: blue;
     height: 100vh;
-    width: 25%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
 }
 #container{
     display: flex;
 }
 .icons{
     color: white;
-    background-color: rgb(50, 50, 50);
+    background-color: black;
     padding: 10px;
     text-align: center;
     border-radius: 50%;
@@ -39,11 +40,25 @@
 #videoButton, #audioButton{
     background-color: red;
 }
+#typeMessage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
 #chatArea input{
     width: 80%;
     margin: 5px;
     padding: 7px;
-    border-radius: 7px;
+    border-radius: 5px;
     border: none;
     background-color: whitesmoke;
+    border: 1px solid black;
+}
+#sendButton{
+    background-color: rgb(60, 60, 255);
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
 }
