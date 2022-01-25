@@ -24,13 +24,14 @@ const getConnectedDevices = (type, callback)=>{
 // getConnectedDevices('audiooutput', speakers => console.log('speakers found', speakers))
 // Updates the select element with the provided set of cameras
 function updateCameraList(cameras) {
-    const listElement = document.querySelector('select#availableCameras');
-    listElement.innerHTML = '';
+    let listElement = document.getElementById('availableCameras');
+    // listElement.innerHTML = '';
     cameras.map(camera => {
-        const cameraOption = document.createElement('option');
+        let cameraOption = document.createElement('option');
         cameraOption.label = camera.label;
         cameraOption.value = camera.deviceId;
-    }).forEach(cameraOption => listElement.add(cameraOption));
+        console.log(cameraOption)
+    }).forEach(cameraOption => listElement.appendChild(cameraOption));
 }
 
 // Get the initial set of cameras connected
